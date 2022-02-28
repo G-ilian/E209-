@@ -1,0 +1,14 @@
+#define led_vd_on PORTD |= 0b00000100
+#define led_vd_off PORTD &= ~0b00000100
+#define led_am_on PORTD |= 0b00001000
+#define led_am_off PORTD &= ~0b00001000
+#define led_vm_on PORTD |= 0b00010000
+#define led_vm_off PORTD &= ~0b00010000
+
+int main(void){
+	DDRD |= 0b00011100; //configura pinos 2, 3 e 4 como saidas
+	
+	for(;;){
+		
+	}
+}
